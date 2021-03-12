@@ -1,0 +1,22 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT,
+    pass TEXT,
+    user_type TEXT
+);
+
+CREATE TABLE hives (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    x1 INTEGER,
+    y1 INTEGER,
+    user TEXT
+);
+
+CREATE TABLE grounds (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    x1 INTEGER,
+    y1 INTEGER,
+    x2 INTEGER, 
+    y2 INTEGER,
+    user TEXT
+)
