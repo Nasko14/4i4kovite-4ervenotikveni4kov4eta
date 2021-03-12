@@ -1,11 +1,10 @@
-from jinja2 import Environment, FileSystemLoader
+from flask import Flask, redirect, url_for, render_template
 
-content = 'This is home page'
+app = Flask(__name__)
 
-file_loader = FileSystemLoader('templates')
-env = Environment(loader=file_loader)
+@app.route("/")
+def home():
+    return render_template("homePage.html", content ="Testing")
 
-template = env.get_template('homePage.html')
-
-output = template.render(content=content)
-print(output)
+if __name__ == "__main__":
+    app.run()
