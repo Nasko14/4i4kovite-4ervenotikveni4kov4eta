@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
 
 {% block title %} 
-    <h1> Добре дошли!</h1>
+    Добре дошли!
 {% endblock %}
 
 {% block content %}
-<h1>Радваме се, че използвате нашия сайт.</h1>
-<p>За да отидете в страницата за подаване на заявки, моля натиснете тук: </p>
-<button type="button" href="request.html"> Подай заявка!</button>
+<h1>Добре дошли на IME NA PROEKTA</h1>
+<p>Моля регистрирайте се/влезте в профила си тук:</p>
+
+<form action="login_signin">
+  <input type="submit" value="Регистрация"/>
+</form>
+
+<form action="bee_request">
+  <input type="submit" value="Подай заявка"/>
+</form>
+
 {% endblock %}
