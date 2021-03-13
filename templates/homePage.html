@@ -1,19 +1,142 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+			Добре дошли
+		</title>
+		<link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
 
-{% block title %} 
-     Добре дошли!
-{% endblock %}
+<style>
+body {
+margin:0;
+padding:0;
+overflow:hidden;
+background-color: green;
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background:radial-gradient(rgb(70, 165, 61),rgb(42, 212, 79));
+}
+.bee{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.bee div{
+position:absolute ;
+display:block ;
+}
+.bee div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
 
-{% block content %}
-<h1>Добре дошли на "Пчелички"</h1>
-<p>Моля регистрирайте се/влезте в профила си тук:</p>
+}
+.bee div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.bee div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.bee div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.bee div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.bee div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.bee div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
 
-<form action="login_signin">
-  <input type="submit" value="Регистрация"/>
-</form>
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px);
+    }
+    40%{
 
-<form action="bee_request">
-  <input type="submit" value="Подай заявка"/>
-</form>
+        transform:translateX (-20px) ;
+    }
+    60%{
+        
+       transform:translateX (-20px); 
+    }
+    80%{
+    
+        transform:translateX (-20px);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px);
+    }
+    }
 
-{% endblock %}
+h2{
+    position:absolute ;
+    top:40%;
+    width:100%;
+	font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+}      
+</style>
+
+
+    <body>
+
+      <h2>Добре дошли на "Пчелички"</h2>
+      <p>Моля регистрирайте се/влезте в профила си тук:</p>
+
+      <form action="login_signin">
+        <input type="submit" value="Регистрация"/>
+      </form>
+      
+      <form action="bee_request">
+        <input type="submit" value="Подай заявка"/>
+      </form>
+
+    <section>
+  </div>
+
+    <div class="bee">
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div></div>
+    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div> 
+    </div>
+     
+    </section>
+    </body>
+</html>
