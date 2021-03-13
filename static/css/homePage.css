@@ -92,7 +92,7 @@ section{
 
 h2{
     position:absolute ;
-    top:40%;
+    top:10%;
     width:100%;
 	font-family: "New Times Roman";
     font-size:4em;
@@ -100,4 +100,15 @@ h2{
     transform:translate ;
     color:#fff;
     transform:translateY (-50%);
+}
+@keyframes bruh {
+    0% {
+        background-position: 0 0;
+   }
+    50% {
+        background-position: 100% 0;
+   }
+    100% {
+        background-position: 0 0;
+   }
 }
