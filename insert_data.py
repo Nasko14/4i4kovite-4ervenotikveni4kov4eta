@@ -32,22 +32,30 @@ def create_hive(conn, hives):
     conn.commit()
     return cur.lastrowid
 
-def main():
+def save_user_in_db(user_name, password, user_type, email):
     database = r"C:\Users\Atanas\Desktop\Test-repo2\pythonsqlite.db"
 
     # create a database connection
     conn = create_connection(database)
     with conn:
         # create a new user
-        user = ('Gosho1', '1234', 'beekeeper', 'something@gmail.com')
+        user = (user_name, password, user_type , email)
         user_id = create_users(conn, user)
 
-        user2 = ('Gosho2', '1234', 'beekeeper', 'something@gmail.com')
-        user2_id = create_users(conn, user2)
+def save_hive_in_db(user_name, longitude1, latitude1):
+    database = r"C:\Users\Atanas\Desktop\Test-repo2\pythonsqlite.db"
 
-        hive = (1, 2, 'Gosho1')
+    # create a database connection
+    conn = create_connection(database)
+    with conn:
+        # create a new hive
+        hive = (longitude1, latitude1, user_name)
         create_hive(conn, hive)
 
+"""
+def main():
+    save_in_db()
 
 if __name__ == '__main__':
     main()
+"""
