@@ -9,15 +9,15 @@
 
 <style>
 body {
-margin:0;
-padding:0;
-overflow:hidden;
-background-color: green;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background:#2fb338;
 }
 section{
-height:100%;
-width:100%;
-  position:absolute ;  background:radial-gradient(rgb(70, 165, 61),rgb(42, 212, 79));
+    height:100%;
+    width:100%;
+    position:absolute ; 
 }
 .bee{
     position:absolute ;
@@ -27,8 +27,8 @@ width:100%;
     left:0;
 }
 .bee div{
-position:absolute ;
-display:block ;
+    position:absolute ;
+    display:block ;
 }
 .bee div:nth-child(1){
     left:20%; 
@@ -48,7 +48,7 @@ display:block ;
     
 }
 .bee div:nth-child(4){
-    left:50%; 
+   left:50%; 
    animation:fall 18s linear infinite ; 
    animation-delay:-5s;
 }
@@ -70,21 +70,19 @@ display:block ;
 
 @keyframes fall{
     0%{
-        opacity:1;
         top:-10%;
         transform:translateX (20px);
     }
     20%{
-        opacity:0.8;
         transform:translateX (-20px);
     }
     40%{
 
-        transform:translateX (-20px) ;
+        transform:translateX (-20px);
     }
     60%{
         
-       transform:translateX (-20px); 
+       transform:translateX (-20px);
     }
     80%{
     
@@ -97,46 +95,71 @@ display:block ;
     }
     }
 
+.bee1{
+    transform: rotateX(180deg);
+    transform: scaleX(-1);
+}
+
 h2{
     position:absolute ;
     top:40%;
     width:100%;
-	font-family: 'Courgette', cursive;
+	font-family: "New Times Roman";
     font-size:4em;
     text-align:center;
     transform:translate ;
     color:#fff;
     transform:translateY (-50%);
-}      
+}
 </style>
 
+<body>
+    <h2>Добре дошли на "Пчелички"</h2>
 
-    <body>
-
-      <h2>Добре дошли на "Пчелички"</h2>
-      <p>Моля регистрирайте се/влезте в профила си тук:</p>
-
-      <form action="login_signin">
+    <form action="login_signin">
         <input type="submit" value="Регистрация"/>
-      </form>
+    </form>
       
-      <form action="bee_request">
+    <form action="bee_request">
         <input type="submit" value="Подай заявка"/>
-      </form>
+    </form>
 
     <section>
-  </div>
-
-    <div class="bee">
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div></div>
-    <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div> 
     </div>
-     
-    </section>
-    </body>
-</html>
+        <div class="bee bee">
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div>
+                
+        </div>
+        
+        <!--
+        <div class="bee bee1">
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div>
+        -->     
+         </div>
+         
+        <div class="bee bee2">
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></img></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div>
+        <div><img src="http://www.pngmart.com/files/8/Bee-Transparent-PNG.png" height="75px" width="75px"></div>
+                
+         </div>
+         </section>
+    
+        </body>
+    </html>
