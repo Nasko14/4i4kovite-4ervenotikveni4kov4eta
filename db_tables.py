@@ -40,7 +40,7 @@ def main():
                                     username text,
                                     pass text,
                                     user_type text,
-                                    email text 
+                                    email text UNIQUE
                                 ); """
 
     sql_create_hives_table = """CREATE TABLE IF NOT EXISTS hives (

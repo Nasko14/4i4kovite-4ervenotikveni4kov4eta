@@ -29,7 +29,7 @@ def create_hive(conn, hives):
     return cur.lastrowid
 
 def save_user_in_db(user_name, password, user_type, email):
-    database = r"C:\Users\Atanas\Desktop\Test-repo2\pythonsqlite.db"
+    database = r"C:\Users\Atanas\Desktop\4i4kovite-4ervenotikveni4kov4eta\pythonsqlite.db"
 
     # create a database connection
     conn = create_connection(database)
@@ -39,7 +39,7 @@ def save_user_in_db(user_name, password, user_type, email):
         user_id = create_users(conn, user)
 
 def save_hive_in_db(user_name, longitude1, latitude1):
-    database = r"C:\Users\Atanas\Desktop\Test-repo2\pythonsqlite.db"
+    database = r"C:\Users\Atanas\Desktop\4i4kovite-4ervenotikveni4kov4eta\pythonsqlite.db"
 
     # create a database connection
     conn = create_connection(database)
@@ -65,16 +65,16 @@ def login_signin():
     return render_template("login_signin.html")
 
 @app.route("/signin", methods=["POST"])
-def sighin():
+def signin():
     print(request.form)
+
     save_user_in_db(request.form['name'], request.form['pass'], 
-                request.form['user_type'], request.form['email'])
-    return "ok"
+            request.form['user_type'], request.form['email'])
+    return render_template("beekeeper.html")
 
 @app.route("/login", methods=["POST"])
-def login():
-
-    return "ok"
-
+def login(): 
+    return render_template("farmer.html")
+    
 if __name__ == "__main__":
     app.run()

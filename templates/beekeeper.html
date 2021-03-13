@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+
+{% endblock %}
+
+{% block content %}
+    <canvas id="myCanvas" width="900" height="500" 
+        style="border:1px solid #000000;"></canvas>
+    <form action="\beekeeper" method = "POST">
+        <label>Enter the x coordinate of the upper left corner of the grounds</label>
+        <input type = "number" id = "x" min="0" max="899">
+        <br>
+        <label>Enter the y coordinate of the upper left corner of the grounds</label>
+        <input type = "number" id = "y" min="0" max="499">
+        <button onclick="drawCircle()" type = "button">add</button>
+     </form>
+    <script src="canvas.js"></script>
+{% endblock %}
